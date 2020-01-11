@@ -2,7 +2,7 @@ import React, {useState,useEffect} from 'react';
 import './App.css';
 //import Card from "./components/Card"
 import axios from "axios"
-import styled from "style-components"
+import styled from "styled-components"
 
 
 
@@ -37,12 +37,48 @@ const App = () => {
   {
     data.map((character, index) => {
      
+      const NameH1 = styled.h1`
 
+
+      color:green;
+    
+      `
+
+      const HeightP = styled.p`
+
+      color:orange;
+    
+      `
+      const MassP = styled.p`
+
+      color:purple;
+    
+      `
+      const BirthYearP = styled.p`
+
+      color:brown;
+    
+      `
+      const EyeColorP = styled.p`
+
+
+      color:blue;
+      `
 
       return(
         <div className="container">
-          <h1 className="character" key={index}>{character.name}</h1>
-          <p className="name"></p>
+          <NameH1 className="character" key={index}>{character.name}</NameH1>
+          <HeightP className="height">Height: {character.height} key={index}</HeightP>
+
+          <MassP className="mass">Mass: {character.mass} key={index}</MassP>
+
+          <BirthYearP className="birthyear">Birth Year: {character.birth_year} key={index}</BirthYearP>
+          <EyeColorP className="eye-color">{character.eye_color} key={index}</EyeColorP>
+
+
+
+
+
         </div>
       )
       
