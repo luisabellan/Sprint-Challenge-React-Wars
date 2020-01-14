@@ -68,12 +68,12 @@ const App = () => {
       return(
         <div className="container">
           <NameH1 className="character" key={index}>{character.name}</NameH1>
-          <HeightP className="height">Height: {character.height} key={index}</HeightP>
+          <HeightP className="height"key={index}>Height: {character.height} </HeightP>
 
-          <MassP className="mass">Mass: {character.mass} key={index}</MassP>
+          <MassP className="mass" key={index}>Mass: {character.mass}</MassP>
 
-          <BirthYearP className="birthyear">Birth Year: {character.birth_year} key={index}</BirthYearP>
-          <EyeColorP className="eye-color">{character.eye_color} key={index}</EyeColorP>
+          <BirthYearP className="birthyear" key={index}>Birth Year: {character.birth_year}</BirthYearP>
+          <EyeColorP className="eye-color"key={index}>{character.eye_color} </EyeColorP>
 
 
 
